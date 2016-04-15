@@ -1,0 +1,628 @@
+/*
+    colors
+    blue            #517a8f
+    dark blue       #3a6377
+    off white       #f3efe2
+    beige           #d9d2be
+    light brown     #a39c80
+    aqua            #529690
+    grayish green   #849690
+    light orange    #e8b38e
+*/
+/* =Template
+-------------------------------------------------------------- */
+    #wrapper,
+    #port_main,/* port_yurp.php */
+    header,
+    .about,
+    .portfolio,
+    .blog,
+    .presentation,
+    .resume,
+    .contact,
+    footer {
+        width:              100%;
+    }
+    #main {
+        background-color:   #fff;
+        padding-top:        150px;/* header resize styling */
+        background:         #f3efe2;
+    }
+    .container {
+        width:              80%;
+        margin:             0 auto;
+        padding:            0 30px;/* header resize styling */
+    }
+    .portfolio,
+    .blog,
+    .presentation,
+    .resume,
+    .contact,
+    footer {
+        padding:            60px 0;
+    }/* vertical padding for each secton */
+    .about {
+        padding:            60px 0 30px 0;
+    }/* vertical padding for .about larger since adjacent to collapsible menu */
+
+    /* BEGIN font colors */
+    .about,
+    .blog,
+    .resume {
+        color:              #517a8f;/* blue */
+    }
+    .portfolio,
+    .contact,
+    .presentation,
+    .presentation a {
+        color:              #f3efe2;/* off white */
+    }
+    footer p {
+        color:              #d9d2be;/* beige */
+    }
+    /* END font colors */
+    
+    /* BEGIN header resize styling */
+    section h1, h2 {
+        font-weight:        700;
+        margin-bottom:      10px;
+    }
+    #main .about .container h2,
+    #main .blog .container h2,
+    #main .resume .container h2 {
+        text-shadow:        1px 1px 1px #517a8f;
+    }
+    #main .portfolio .container h2,
+    #main .presentation .container h2,
+    #main .contact .container h2 {
+        text-shadow:        1px 1px 1px #f3efe2;        
+    }
+    section p {
+        margin-bottom:      20px;
+    }
+    section p:last-child {
+        margin-bottom:      0;
+    }
+    section.color {
+        background-color: #3cb5f9;
+        color: white;
+    }
+    /* END header resize styling */
+    
+    /* BEGIN header styling */
+    header {
+        height:             155px;
+        overflow:           hidden;
+        /*want movable header*/
+        overflow:           hidden;/* header resize styling */
+        position:           fixed;/* header resize styling */
+        top:                0;
+        left:               0;
+        z-index:            999;
+        background-color:   #0683c9;
+        -webkit-transition: height 0.3s;
+        -moz-transition:    height 0.3s;
+        -ms-transition:     height 0.3s;
+        -o-transition:      height 0.3s;
+        transition:         height 0.3s;
+    }
+    header nav {
+        display:            inline-block;
+    }
+    header nav a {
+        line-height:        125px;
+        margin-left:        20px;
+        color:              #f3efe2;
+        font-weight:        700;
+        font-size:          18px;
+        -webkit-transition: all 0.2s;
+        -moz-transition:    all 0.2s;
+        -ms-transition:     all 0.2s;
+        -o-transition:      all 0.2s;
+        transition:         all 0.2s;
+    }
+    header nav a:hover {
+        color:              #f3efe2;
+        text-shadow:        0 0 10px #f3efe2;
+        text-decoration:    none;
+    }
+    header nav a:link {
+        text-decoration:    none;
+        color:              #f3efe2;
+    }/* refactor nav buttons */
+    header.smaller {
+        height:             75px;
+        border-bottom:      1px solid #d9d2be;
+    }
+    header.smaller h1#logo img {
+        width:              175px;
+        font-size:          30px;
+    }/* resize header styling */
+    header h1#logo img {
+        display:            inline-block;
+        padding-top:        15px;
+        -webkit-transition: all 0.3s;
+        -moz-transition:    all 0.3s;
+        -ms-transition:     all 0.3s;
+        -o-transition:      all 0.3s;
+        transition:         all 0.3s;
+    }/* resize header styling */
+    header.smaller nav a {
+        line-height:        75px;
+    }
+    /* END header styling */
+
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12 {
+        padding-left:       0;
+        padding-right:      0;
+    }/* refactor boot strap padding */
+    
+    /* recfactoring scrolling code to display each section while working with collapsible header */
+    #portfoliox,
+    #blogx,
+    #resumex,
+    #contactx {
+        padding-top:            30px;
+    }
+        
+    /* =Portfolio
+    -------------------------------------------------------------- */
+    /* BEGIN setup boxes, index.php */
+    .portfolio .container li {
+        float:              left;
+        margin-left:        0;
+        margin-top:         35px;
+    }
+    .portfolio .container li:nth-child(1),
+    .portfolio .container li:nth-child(2),
+    .portfolio .container li:nth-child(3),
+    .portfolio .container li:nth-child(4),
+    .portfolio .container li:nth-child(5),
+    .portfolio .container li:nth-child(6),
+    .portfolio .container li:nth-child(7) {
+        margin-right:       45px;
+    }/* margins */
+    .portfolio .container li:nth-child(1),
+    .portfolio .container li:nth-child(2),
+    .portfolio .container li:nth-child(3),
+    .portfolio .container li:nth-child(4),
+    .portfolio .container li:nth-child(5),
+    .portfolio .container li:nth-child(6),
+    .portfolio .container li:nth-child(7) {
+        display:            block;
+        width:              220px;
+        height:             200px;
+        background-color:   #849690;
+        text-align:         center;
+        border:             1px solid #d9d2be;
+        border-radius:      3px;
+    }
+    .portfolio .container li:nth-child(1) p,
+    .portfolio .container li:nth-child(2) p,
+    .portfolio .container li:nth-child(3) p,
+    .portfolio .container li:nth-child(4) p,
+    .portfolio .container li:nth-child(5) p {
+        font-size:          1.2em;
+        text-align:         center;
+        vertical-align:     middle;
+    }
+    #main .portfolio .container #portfolio a img,
+    #main .portfolio .container #yurp a img,
+    #main .portfolio .container #ability_connection a img,
+    #main .portfolio .container #pinwheels_for_peace a img,
+    #main .portfolio .container #project_collaboration a img,
+    #main .portfolio .container #logo_creation a img {
+        width:              174px;
+        height:             124px;
+    }
+    /* END setup boxes, index.php */
+    
+    /* BEGIN portfolio Pages */
+    #port_main {
+        background:         #f3efe2;
+    }
+    #port_main #port_container #port_head .col-sm-6 h3,
+    #port_main #port_container #techs_did .col-sm-6 h3,
+    #port_main #port_container .header_buttons .col-sm-1:nth-child(2) a,
+    #port_main #port_container .header_buttons .col-sm-1:nth-child(4) a,
+    #port_main #port_container .header_buttons {
+        display:            block;
+    }
+    /* BEGIN portfolio page header */
+    #port_main #port_container #port_head .col-xs-1:nth-child(6) {
+        width:              100px;        
+    }/* refactor bootstrap width for 'visit site' button, force non-wrapping */
+    #port_main #port_container .header_buttons .col-sm-1:nth-child(2),
+    #port_main #port_container .header_buttons .col-sm-1:nth-child(4) {
+        padding-top:        20px;
+    }    
+    #port_main #port_container #port_head,
+    #port_main #port_container .header_buttons {
+        background:         #d9d2be;
+    }
+    #port_main #port_container #port_head {
+        height:             80px;
+    }
+    #port_main #port_container .header_buttons {
+        height:             80px;
+    }
+    #port_main #port_container #port_head {
+        padding-top:        30px;
+    }
+    #port_main #port_container #port_head .col-sm-6 h3 {
+        font-size:          2.5em;
+        font-weight:        bold;
+        color:              #517a8f;
+        text-shadow:        2px 2px 14px #aaa;
+    }
+    #port_main #port_container .header_buttons .col-sm-1 a {
+        font-size:          1em;
+        font-weight:        400;
+        text-align:         center;
+        border-radius:      12px;
+        padding:            8px 16px;
+    }
+    #port_main #port_container .header_buttons .col-sm-1:nth-child(2) a {
+        background:         #7a9aab;
+        color:              #f3efe2;
+        text-shadow:        2px 2px 10px black;
+    }/* link colors of 'home' button */
+    #port_main #port_container .header_buttons .col-sm-1:nth-child(4) a {
+        background:         #54b44a;
+        color:              #f3efe2;
+        text-shadow:        2px 2px 10px black;
+    }/* link colors of 'visit site' button */
+    #port_main #port_container .header_buttons .col-sm-1:nth-child(2) a:hover {
+        background:         #529690; /* For browsers that do not support gradients */
+        background:         -webkit-linear-gradient(#7a9aab, #87a2b0); /* For Safari 5.1 to 6.0 */
+        background:         -o-linear-gradient(#7a9aab, #87a2b0); /* For Opera 11.1 to 12.0 */
+        background:         -moz-linear-gradient(#7a9aab, #87a2b0); /* For Firefox 3.6 to 15 */
+        background:         linear-gradient(#7a9aab, #87a2b0); /* Standard syntax */
+        color:              #f3efe2;
+        text-decoration:    none;
+    }/* hover colors of 'home' button */
+    #port_main #port_container .header_buttons .col-sm-1:nth-child(4) a:hover {
+        background:         #529690; /* For browsers that do not support gradients */
+        background:         -webkit-linear-gradient(#54b44a, #7ed276); /* For Safari 5.1 to 6.0 */
+        background:         -o-linear-gradient(#54b44a, #7ed276); /* For Opera 11.1 to 12.0 */
+        background:         -moz-linear-gradient(#54b44a, #7ed276); /* For Firefox 3.6 to 15 */
+        background:         linear-gradient(#54b44a, #7ed276); /* Standard syntax */
+        color:              #f3efe2;
+        text-decoration:    none;
+    }/* hover colors of 'visit site' button */
+    /* END portfolio page header */
+
+    /* BEGIN portfolio page purpose */
+    #port_main #port_container #purpose {
+        background:         #a39c80;
+    }
+    #port_main #port_container #purpose .col-sm-4 {
+        background:         #a39c80;
+    }
+    #port_main #port_container #purpose .col-sm-4 h2:nth-child(1),
+    #port_main #port_container #purpose .col-sm-4 h2:nth-child(3) {
+        font-weight:        400;
+    }
+    #port_main #port_container #purpose .col-sm-4 h2:nth-child(1),
+    #port_main #port_container #purpose .col-sm-4 h2:nth-child(3),
+    #port_main #port_container #purpose .col-sm-4 p,
+    #port_main #port_container #purpose .col-sm-4 ul,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+        color:              #f3efe2;    
+    }
+    #port_main #port_container #screen_capture_section_2 h3,
+    #port_main #port_container #screen_capture_section_2 ul {
+        color:              #3a6377;
+    }
+    #port_main #port_container #purpose .col-sm-4 ul,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 ul,
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+        padding-left:       1em;    
+        width:              460px;
+    }
+    /* END portfolio page header */
+
+    #port_main #port_container #purpose img,
+    #port_main #port_container #screen_capture_section_1 img,
+    #port_main #port_container #screen_capture_section_2 img,
+    #port_main #port_container #screen_capture_section_3 img {
+        float:              right;
+    }
+    /* =Technologies, What I did ... */
+    #port_main #port_container #techs_did {
+        height:             600px;
+        background:         #d9d2be;
+    }
+    #port_main #port_container #techs_did ul li,
+    .resume .container .well ul li {
+        margin-left:        1em;
+    }
+    #port_main #port_container #techs_did h3,
+    #port_main #port_container #screen_capture_section_1 h3,
+    #port_main #port_container #screen_capture_section_2 h3,
+    #port_main #port_container #screen_capture_section_3 h3 {
+        font-weight:        400;
+    }
+    #port_main #port_container #screen_capture_section_1 h3:nth-child(2),
+    #port_main #port_container #screen_capture_section_1 h3:nth-child(4),
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 h3:nth-child(2) {
+        padding-top:        25px;
+    }
+    #port_main #port_container #screen_capture_section_1 h3:nth-child(1),
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 h3:nth-child(1),
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 h3 {
+        font-size:          2em;
+    }
+    #port_main #port_container #screen_capture_section_1,
+    #port_main #port_container #screen_capture_section_2 {
+        height:             400px;
+    }
+    #port_main #port_container #screen_capture_section_3 {
+        height:             399px;
+    }
+    #port_main #port_container #screen_capture_section_1,
+    #port_main #port_container #screen_capture_section_3 {
+        background:         #a39c80;    
+    }
+    #port_main #port_container #screen_capture_section_2 {
+        background:         #d9d2be;
+    }
+    #port_main #port_container #purpose .col-sm-4,
+    #port_main #port_container #techs_did,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4,
+    #port_main #port_container #screen_capture_section_2 .col-sm-4,
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 {
+        padding-top:         25px;
+    }
+    #port_main #port_container #techs_did #techs #apis_constructs h3,
+    #port_main #port_container #techs_did #techs #languages h3,
+    #port_main #port_container #techs_did #what_i_did h3 {
+        color:              #3a6377;
+    }
+    #port_main #port_container #techs_did #techs #apis_constructs ul,
+    #port_main #port_container #techs_did #techs #languages ul,
+    #port_main #port_container #techs_did #what_i_did ul {
+        padding-left:       1em;
+        font-weight:        400;
+        font-size:          1em;
+    }
+    #port_main #port_container #techs_did .col-sm-2,
+    #port_main #port_container #techs_did .col-sm-4 {
+        color:              #3a6377;
+    }
+    #port_main #port_container #techs_did .col-sm-2 h3,
+    #port_main #port_container #techs_did .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4 h3 {
+        padding-bottom:     10px;
+    }
+    /* END portfolio Pages */
+
+    /* BEGIN blog section */
+    /* styling buttons */
+    .blog .download h3 {
+        font-size:          3em;
+    }
+    /* Presentation section */
+    section.presentation table tbody tr td:nth-child(1) a,
+    .contact .container form p input,
+    .resume .container a:nth-child(2) {
+        font-family:        Verdana;
+        color:              #f3efe2;
+        text-decoration:    none;
+        text-shadow:        2px 2px 10px black;
+        line-height:        1.2em;
+    }/* button font styling */
+    section.presentation table tbody tr td:nth-child(1) a .button,
+    .contact .container form p input,
+    .resume .container a:nth-child(2) .button {
+        width:              130px;
+        height:             35px;
+        background:         #7CD274;
+        border-radius:      8px;
+        border:             1px solid #60ae59;
+    }/* button styling */
+    section.presentation table tbody tr td:nth-child(1) a:hover .button,
+    .contact .container form p input,
+    .resume .container a:nth-child(2) .button {
+        background:         #7CD274; /* For browsers that do not support gradients */    
+        background:         -webkit-linear-gradient(left top, #7CD274, #a6e4a0); /* For Safari 5.1 to 6.0 */
+        background:         -o-linear-gradient(bottom right, #7CD274, #a6e4a0); /* For Opera 11.1 to 12.0 */
+        background:         -moz-linear-gradient(bottom right, #7CD274, #a6e4a0); /* For Firefox 3.6 to 15 */
+        background:         linear-gradient(to bottom right, #7CD274, #a6e4a0); /* Standard syntax (must be last) */   
+    }
+    section.presentation table tbody tr td:nth-child(1) a .button p,
+    .resume .container a:nth-child(2) .button {
+        text-align:         center;
+        padding-top:        .35em;
+    }/* button text alignment */
+    /* END blog section */
+    
+    /* BEGIN resume section */
+    .btn-primary {
+        color:              #fff;
+        background-color:   #7a9aab;
+        border-color:       #2e6da4;
+        border-radius:      8px;
+    }/* refactor bootstrap styling for expand/collapse button */
+    .resume .container img[src*="email.png"] {
+        width:              216px;
+        height:             14px;
+    }
+    .resume .container img[src*="phone.png"] {
+        width:              110px;
+        height:             17px;
+    }
+    .resume .container p {
+        margin-bottom:      0;
+    }
+    .resume .container h3 {
+        padding-top:        25px;
+        margin-bottom:      5px;
+    }
+    .resume .container .bold {
+        font-weight:        500;
+    }
+    .resume .container p.line_1 {
+        margin:             0;
+    }/* reset margin */
+    .resume .container p.experience {
+        margin-bottom:      10px;
+    }/* space between experience sections */
+    .resume .container h2:nth-child(1) {
+        position:           none;
+    }/* resume title */
+    .resume .container a:nth-child(2) .button {
+        margin-bottom:     8px;
+    }
+    .resume .container h3:nth-child(3) {
+        line-height:        1em;
+    }
+    .resume .container p:nth-child(4) {
+        line-height:        1.2em;
+    }/* "okc metro"*/
+    .resume .container p:nth-child(6) {
+        line-height:        1.4em;
+    }/* email image */
+    .resume .container p:nth-child(7) {
+        line-height:        1.6em;
+    }/* phone number image */
+    .resume .container p:nth-child(11) {
+        margin:             .5em 0;
+    }
+    /* END resume section */
+
+    /* BEGIN contact section */
+    .contact .container form p input {
+        margin-top:        10px;
+        /* BEGIN cancel bootstrap styling */
+        border-style:       none;
+        border-width:       0;
+        /* END cancel bootstrap styling */
+    }
+    .contact {
+        border-bottom:      1px solid #d9d2be;
+    }
+    .contact_form_response {
+        padding-top:        100px;
+        width:              100%;
+        height:             800px;
+        background:         #529690;
+    }
+    .contact_form_response .container p:nth-child(1) {
+        padding-top:        75px;
+        font-size:          1.8em;
+    }
+    .contact_form_response .container a {
+        background:         #517a8f;
+        padding:            10px;
+        font-size:          1.2em;
+        border-radius:      3px;
+        color:              #f3efe2;
+    }
+    .contact_form_response .container a:hover {
+        background:         #7a9aab; /* For browsers that do not support gradients */
+        background:         -webkit-linear-gradient(#517a8f, #7a9aab); /* For Safari 5.1 to 6.0 */
+        background:         -o-linear-gradient(#517a8f, #7a9aab); /* For Opera 11.1 to 12.0 */
+        background:         -moz-linear-gradient(#517a8f, #7a9aab); /* For Firefox 3.6 to 15 */
+        background:         linear-gradient(#517a8f, #7a9aab); /* Standard syntax */
+        text-decoration:    none;
+    }    
+    .contact_form_response .container {
+        width:              425px;
+        height:             400px;
+        text-align:         center;
+        border:             2px solid #3a6377;
+        padding:            25px;
+        background:         #f3efe2;
+        border-radius:      8px;
+    }
+    /* END contact section */
+    
+    /* =Footer
+    -------------------------------------------------------------- */
+    /* =Extras
+    -------------------------------------------------------------- */
+    /* BEGIN footer section */
+    .clearfix:after {
+        visibility:         hidden;
+        display:            block;
+        content:            "";
+        clear:              both;
+        height:             0;
+    }
+    .portfolio,
+    .blog,
+    .resume,
+    .contact
+    footer {
+    }/* set full screen section heights */
+    @media all and (min-width: 769px) and (max-width: 1092px) {
+        .portfolio {
+            height:             865px;
+        }
+    }/* make larger height to account for wrapping portfolio boxes */
+    footer a:nth-child(2) {
+        text-decoration:    none;
+        text-shadow:        2px 2px 12px grey;
+        line-height:        1.2em;
+    }/* button font styling */
+    footer a:nth-child(2) .top-align {
+        width:              60px;
+        height:             40px;
+        background-color:   #f3efe2;
+        border:             1px solid #a1a1a1;
+        border-radius:      8px;
+        margin:             auto;
+    }/* button styling */
+    footer a:nth-child(2) .top-align p {
+        color:              #3a6377;    
+        text-align:         center;
+        padding-top:        .5em;
+        font-weight:        600;
+    }
+    footer .container:nth-child(1) p {
+        text-align:         center;
+        padding-bottom:     25px;
+    }
+    header,
+    footer {
+        background:         #517a8f;/* blue */
+    }
+    .about,
+    .blog,
+    .resume {
+        background:         #f3efe2;/* off white */
+    }
+    .portfolio,
+    .contact {
+        background:         #529690;/* aqua */
+    }
+    .presentation {
+        background:         #849690;/* grayish green */   
+    }
+    /* cancel and reset bootstrap styling for .well */
+    .well {
+        min-height:         0;
+        padding:            0;
+        margin-bottom:      0;
+        background-color:   #f3efe2;
+        border:             none;
+        -webkit-box-shadow: none;
+        box-shadow:         none;
+    }
+    /* END footer section */

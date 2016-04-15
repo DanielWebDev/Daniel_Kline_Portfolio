@@ -1,0 +1,495 @@
+
+    /* BEGIN index.php styling */
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        header h1#logo img,
+        header nav {
+            display:        block;
+        }    
+        #logo img {
+            margin:         0 auto;
+        }
+        header nav {
+            text-align:     center;
+        }
+        header nav a {
+            line-height:    78px;
+        }
+        .portfolio .container li:nth-child(1),
+        .portfolio .container li:nth-child(2),
+        .portfolio .container li:nth-child(3),
+        .portfolio .container li:nth-child(4),
+        .portfolio .container li:nth-child(5) {
+            margin-right:       10px;
+        }/* adjust portfolio blocks for mobile */
+        
+    }/* make logo image smaller to make room for menu as screen width gets smaller */
+    
+    /* tweek adjustment for safari at 768px width */
+    @media all and (min-width: 750px) and (max-width: 768px) {
+        #logo img {
+            width:          250px;
+        }
+    }
+    @media all and (min-width: 320px) and (max-width: 749px) {
+        #logo img {
+            width:          285px;
+        }
+    }
+    /* adjust nav menu for smaller widths */
+    @media all and (min-width: 475px) and (max-width: 768px) {
+        header nav a {
+            font-size:      15px;
+            margin-left:    15px;
+        }
+    }/* nav menu adjustments as screen width gets smaller */
+    @media all and (min-width: 320px) and (max-width: 474px) {
+        header nav a {
+            font-size:      14px;
+            margin-left:    8px;
+        }
+    }/* nav menu adjustments as screen width gets smaller */
+    /* adjust screen width for smaller devices */
+    @media all and (min-width: 507px) and (max-width: 768px) {
+        .container {
+            width:          98%;
+        }
+        .portfolio {
+            height:         850px;
+        }
+    }
+    @media all and (min-width: 320px) and (max-width: 506px) {
+        .container {
+            width:          99%;
+        }/* adjust nav menu size for smaller screen widths */
+    }
+    @media all and (min-width: 675px) and (max-width: 768px) {
+        header nav a {
+            font-size:      16px;
+            margin-left:    12px;
+        }
+    }
+    @media all and (min-width: 507px) and (max-width: 674px) {
+        header nav a {
+            font-size:      16px;
+            margin-left:    12px;
+        }
+    }
+    @media all and (min-width: 445px) and (max-width: 506px) {
+        header nav a {
+            font-size:      15px;
+            margin-left:    10px;
+            font-weight:    400;
+        }
+    }
+    @media all and (min-width: 390px) and (max-width: 444px) {
+        header nav a {
+            font-size:      13px;
+            margin-left:    8px;
+            font-weight:    400;
+        }
+    }
+    @media all and (min-width: 320px) and (max-width: 389px) {
+        header nav a {
+            font-size:      12px;
+            margin-left:    8px;
+            font-weight:    400;
+        }
+    }
+    /* END index.php styling */
+
+    /* BEGIN portfolio styling */
+    /* portfolio header */
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        #wrapper #port_main #port_container .header_buttons .col-sm-1:nth-child(2) a {
+            width:              80px;
+        }
+    }/* adjust width of 'home' button as screen size gets narrower */
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        #wrapper #port_main #port_container .header_buttons .col-sm-1:nth-child(4) a {
+            width:              115px;
+        }
+    }/* adjust width of 'visit site' button as screen size gets narrower */
+    @media all and (min-width: 320px) and (max-width: 550px) {
+        #wrapper #port_main #port_container .header_buttons .col-sm-1:nth-child(4) a {
+            margin-left:        50px;
+        }
+    }/* adjust width of 'visit site' button as screen size gets narrower */
+    
+    
+    @media all and (min-width: 500px) and (max-width: 768px) {
+        #port_main #port_container #port_head .col-sm-6 h3 {
+            font-size:          2em;
+            width:              500px;/* adjust width to avoid text wrapping */
+        }/* header font size */
+    }/* adjust font size and width and screen size narrows */
+    @media all and (min-width: 445px) and (max-width: 499px) {
+        #port_main #port_container #port_head .col-sm-6 h3 {
+            font-size:          1.8em;
+            padding-top:        0;
+            width:              400px;/* adjust width to avoid text wrapping */
+        }/* header font size */
+    }/* adjust font size and width and screen size narrows */
+    @media all and (min-width: 320px) and (max-width: 444px) {
+        #port_main #port_container #port_head .col-sm-6 h3 {
+            font-size:          1.6em;
+            width:              300px;/* adjust width to avoid text wrapping */
+        }/* header font size */
+    }/* adjust font size and width and screen size narrows */
+    
+    
+    @media all and (min-width: 682px) and (max-width: 768px) {
+        #topx #wrapper #port_main #port_container #purpose {
+            height:             725px;
+        }/* adjust height for #purpose section */
+    }
+    @media all and (min-width: 550px) and (max-width: 681px) {
+        #topx #wrapper #port_main #port_container #purpose {
+            height:             750px;
+        }/* adjust height for #purpose section */
+    }
+    @media all and (min-width: 445px) and (max-width: 749px) {
+        #topx #wrapper #port_main #port_container #purpose {
+            height:             700px;
+        }/* adjust height for #purpose section */
+    }
+    @media all and (min-width: 400px) and (max-width: 444px) {
+        #topx #wrapper #port_main #port_container #purpose {
+            height:             650px;
+        }/* adjust height for #purpose section */
+    }
+    @media all and (min-width: 320px) and (max-width: 399px) {
+        #topx #wrapper #port_main #port_container #purpose {
+            height:             600px;
+        }/* adjust height for #purpose section */
+    }
+    @media all and (min-width: 560px) and (max-width: 768px) {
+        #topx #wrapper #port_main #port_container #techs_did {
+            height:             625px;
+        }/* adjust height for #techs_did section */
+    }
+    @media all and (min-width: 500px) and (max-width: 559px) {
+        #topx #wrapper #port_main #port_container #techs_did {
+            height:             600px;
+        }/* adjust height for #techs_did section */
+    }
+    @media all and (min-width: 450px) and (max-width: 499px) {
+        #topx #wrapper #port_main #port_container #techs_did {
+            height:             650px;
+        }/* adjust height for #techs_did section */
+    }
+    @media all and (min-width: 400px) and (max-width: 449px) {
+        #topx #wrapper #port_main #port_container #techs_did {
+            height:             725px;
+        }/* adjust height for #techs_did section */
+    }
+    @media all and (min-width: 320px) and (max-width: 399px) {
+        #topx #wrapper #port_main #port_container #techs_did {
+            height:             775px;
+        }/* adjust height for #techs_did section */
+    }
+    @media all and (min-width: 700px) and (max-width: 768px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_1 {
+            height:             675px;
+        }/* adjust height for #screen_capture_section_1 section */
+    }
+    @media all and (min-width: 600px) and (max-width: 699px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_1 {
+            height:             650px;
+        }/* adjust height for #screen_capture_section_1 section */
+    }
+    @media all and (min-width: 500px) and (max-width: 599px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_1 {
+            height:             550px;
+        }/* adjust height for #screen_capture_section_1 section */
+    }
+    @media all and (min-width: 700px) and (max-width: 768px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_2 {
+            height:             615px;
+        }/* adjust height for #screen_capture_section_2 section */
+    }
+    @media all and (min-width: 600px) and (max-width: 699px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_2 {
+            height:             550px;
+        }/* adjust height for #screen_capture_section_2 section */
+    }
+    @media all and (min-width: 500px) and (max-width: 599px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_2 {
+            height:             500px;
+        }/* adjust height for #screen_capture_section_2 section */
+    }
+    @media all and (min-width: 400px) and (max-width: 499px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_2 {
+            height:             450px;
+        }/* adjust height for #screen_capture_section_2 section */
+    }
+    @media all and (min-width: 320px) and (max-width: 399px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_2 {
+            height:             475px;
+        }/* adjust height for #screen_capture_section_2 section */
+    }
+    @media all and (min-width: 700px) and (max-width: 768px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_3 {
+            height:             475px;
+        }/* adjust height for #screen_capture_section_3 section */
+    }
+    @media all and (min-width: 600px) and (max-width: 699px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_3 {
+            height:             525px;
+        }/* adjust height for #screen_capture_section_3 section */
+    }
+    @media all and (min-width: 500px) and (max-width: 599px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_3 {
+            height:             600px;
+        }/* adjust height for #screen_capture_section_3 section */
+    }
+    @media all and (min-width: 400px) and (max-width: 499px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_3 {
+            height:             650px;
+        }/* adjust height for #screen_capture_section_3 section */
+    }
+    @media all and (min-width: 360px) and (max-width: 399px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_3 {
+            height:             600px;
+        }/* adjust height for #screen_capture_section_3 section */
+    }
+    @media all and (min-width: 340px) and (max-width: 359px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_3 {
+            height:             600px;
+        }/* adjust height for #screen_capture_section_3 section */
+    }
+    @media all and (min-width: 320px) and (max-width: 339px) {
+        #topx #wrapper #port_main #port_container #screen_capture_section_3 {
+            height:             400px;
+        }/* adjust height for #screen_capture_section_3 section */
+    }
+    @media all and (min-width: 690px) and (max-width: 768px) {    
+        #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-2 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul li {
+            width:              250px;
+        }/* adjust right margin for 'ul' list items */
+    }
+    @media all and (min-width: 650px) and (max-width: 689px) {    
+        #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-2 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul li {
+            width:              625px;
+        }/* adjust right margin for 'ul' list items */
+    }
+    @media all and (min-width: 590px) and (max-width: 649px) {    
+        #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-2 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul li {
+            width:              575px;
+        }/* adjust right margin for 'ul' list items */
+    }
+    @media all and (min-width: 520px) and (max-width: 589px) {    
+        #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-2 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul li {
+            width:              500px;
+        }/* adjust right margin for 'ul' list items */
+    }
+    @media all and (min-width: 460px) and (max-width: 519px) {    
+        #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-2 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul li {
+            width:              400px;
+        }/* adjust right margin for 'ul' list items */
+    }
+    @media all and (min-width: 400px) and (max-width: 459px) {    
+        #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-2 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul li {
+            width:              350px;
+        }/* adjust right margin for 'ul' list items */
+    }
+    @media all and (min-width: 320px) and (max-width: 399px) {    
+        #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-2 ul li,
+        #wrapper #port_main #port_container #tech_did .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul li,
+        #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul li {
+            width:              310px;
+        }/* adjust right margin for 'ul' list items */
+    }
+    /* BEGIN styling to center screen capture photos */
+    @media all and (min-width: 746px) and (max-width: 768px) {
+        #port_main #port_container #purpose .col-sm-6 img,
+        #port_main #port_container #screen_capture_section_1 img,
+        #port_main #port_container #screen_capture_section_2 img,
+        #port_main #port_container #screen_capture_section_3 img {
+            /*margin-right:       10%;*/
+        }/* position screen capture image in the center */
+    }
+    @media all and (min-width: 710px) and (max-width: 745px) {
+        #port_main #port_container #purpose .col-sm-6 img,
+        #port_main #port_container #screen_capture_section_1 img,
+        #port_main #port_container #screen_capture_section_2 img,
+        #port_main #port_container #screen_capture_section_3 img {
+            margin-right:       9%;
+        }/* position screen capture image in the center */
+    }
+    @media all and (min-width: 690px) and (max-width: 709px) {
+        #port_main #port_container #purpose .col-sm-6 img,
+        #port_main #port_container #screen_capture_section_1 img,
+        #port_main #port_container #screen_capture_section_2 img,
+        #port_main #port_container #screen_capture_section_3 img {
+            margin-right:       8%;
+        }/* position screen capture image in the center */
+    }
+    @media all and (min-width: 660px) and (max-width: 689px) {
+        #port_main #port_container #purpose .col-sm-6 img,
+        #port_main #port_container #screen_capture_section_1 img,
+        #port_main #port_container #screen_capture_section_2 img,
+        #port_main #port_container #screen_capture_section_3 img {
+            margin-right:       5%;
+        }/* position screen capture image in the center */
+    }
+    @media all and (min-width: 640px) and (max-width: 669px) {
+        #port_main #port_container #purpose .col-sm-6 img,
+        #port_main #port_container #screen_capture_section_1 img,
+        #port_main #port_container #screen_capture_section_2 img,
+        #port_main #port_container #screen_capture_section_3 img {
+            margin-right:       4%;
+        }/* position screen capture image in the center */
+    }
+    @media all and (min-width: 620px) and (max-width: 639px) {
+        #port_main #port_container #purpose .col-sm-6 img,
+        #port_main #port_container #screen_capture_section_1 img,
+        #port_main #port_container #screen_capture_section_2 img,
+        #port_main #port_container #screen_capture_section_3 img {
+            margin-right:       2%;
+        }/* position screen capture image in the center */
+    }
+    @media all and (min-width: 600px) and (max-width: 619px) {
+        #port_main #port_container #purpose .col-sm-6 img,
+        #port_main #port_container #screen_capture_section_1 img,
+        #port_main #port_container #screen_capture_section_2 img,
+        #port_main #port_container #screen_capture_section_3 img {
+            margin-right:       2%;
+        }/* position screen capture image in the center */
+    }
+    /* END styling to center screen capture photos */
+    #port_main #port_container #techs_did .col-sm-2 h3,
+    #port_main #port_container #techs_did .col-sm-4 h3 {
+        padding-top:            10px;
+    }
+    /* BEGIN adjust padding above headers */
+    #port_main #port_container #techs_did .col-sm-2 h3,
+    #port_main #port_container #techs_did .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_1 .col-sm-6 h3,
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_2 .col-sm-6 h3,
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_3 .col-sm-6 h3 {
+        padding-bottom:         0;
+    }     
+    /* END adjust padding above headers */
+
+    /* BEGIN styling text in each section */
+    #port_main #port_container #purpose .col-sm-4 h2,
+    #port_main #port_container #purpose .col-sm-4 p,
+    #port_main #port_container #techs_did .col-sm-4 p,
+    #port_main #port_container #techs_did .col-sm-2 h3,
+    #port_main #port_container #techs_did .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 h3,
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 h3 {
+         padding-left:          10px;
+         padding-right:         10px;
+         padding-top:           15px;   
+    }
+    #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+    #wrapper #port_main #port_container #techs_did .col-sm-2 ul,
+    #wrapper #port_main #port_container #techs_did .col-sm-4 ul,
+    #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-2 ul,
+    #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+    #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-2 ul,
+    #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul,
+    #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-2 ul,
+    #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+        margin-left:        1em;
+    }/* margin for bullet 'ul' items */
+    #wrapper #port_main #port_container #purpose .col-sm-4 ul li,
+    #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-2 ul,
+    #wrapper #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+    #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-2 ul,
+    #wrapper #port_main #port_container #screen_capture_section_2 .col-sm-4 ul,
+    #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-2 ul,
+    #wrapper #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+        width:              250px;
+    }/* #purpose section #screen_capture_sections text width adjustments */    
+    #wrapper #port_main #port_container #techs_did .col-sm-2 ul {
+        width:              150px;
+    }/* adjust width */
+    #wrapper #port_main #port_container #techs_did .col-sm-4 ul {
+        width:              275px;
+    }
+    /* END styling text in each section */
+    #wrapper #port_main #port_container #purpose .col-sm-4 ul,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 ul,
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+        padding-left:       1em;
+        width:              460px;
+    }
+    footer .container p,
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 h3:nth-child(1),
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 h3:nth-child(1) {
+        padding-top:        25px;
+    }
+    #port_main #port_container #purpose .col-sm-6 img,
+    #port_main #port_container #screen_capture_section_1 img,
+    #port_main #port_container #screen_capture_section_2 img,
+    #port_main #port_container #screen_capture_section_3 img {
+        /*padding-top:        25px;*/
+    }
+    /* =Technologies, What I did ... */
+    #port_main #port_container #screen_capture_section_1 h3:nth-child(2),
+    #port_main #port_container #screen_capture_section_1 h3:nth-child(4),
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 h3:nth-child(2) {
+        padding-top:        25px;
+    }
+    #port_main #port_container #screen_capture_section_1 h3:nth-child(1),
+    #port_main #port_container #screen_capture_section_2 .col-sm-4 h3:nth-child(1),
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 h3 {
+        font-size:          2em;
+    }
+    #port_main #port_container #purpose .col-sm-4,
+    #port_main #port_container #techs_did,
+    #port_main #port_container #screen_capture_section_1 .col-sm-4,
+    #port_main #port_container #screen_capture_section_2 .col-sm-4,
+    #port_main #port_container #screen_capture_section_3 .col-sm-4 {
+        padding-top:         25px;
+    }
+    /* END portfolio styling */
+    #wrapper .main .about .container .col-xs-1 {
+        width:              0;
+    }/* adjust social media icon width in header as screen narrows */
+    .main .about .container div:nth-child(5) {
+        margin-right:       40px;
+    }/* adjust social media icon width in header as screen narrows */
+    .main .about .container div:nth-child(6) {
+        margin-right:       20px;
+    }/* adjust social media icon width in header as screen narrows */

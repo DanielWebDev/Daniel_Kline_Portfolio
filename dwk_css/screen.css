@@ -1,0 +1,153 @@
+    
+    header h1#logo img {
+        float:              left;
+    }
+    header nav {
+        float:              right;
+    }
+    @media all and (min-width: 769px) and (max-width: 1075px) {
+        .container {
+            width:          90%;
+        }
+    }/* adjust to narrower margin for smaller devices */
+    /* =Header
+    -------------------------------------------------------------- */
+    @media all and (min-width: 975px) and (max-width: 1075px) {
+        header nav a {
+            font-size:      15px;
+            margin-left:    15px;
+        }
+    }/* nav menu adjustments as screen width gets smaller */
+    @media all and (min-width: 769px) and (max-width: 976px) {
+        header nav a {
+            font-size:      14px;
+            margin-left:    8px;
+        }
+    }/* nav menu adjustments as screen width gets smaller */
+    #logo img {
+        width:              350px;
+    }
+    /* make logo image smaller to make room for menu as screen width gets smaller */
+    @media all and (min-width: 926px) and (max-width: 1150px) {
+        #logo img {
+            width:          300px;
+        }
+        header nav a {
+            line-height:    100px;
+        }
+    }
+    @media all and (min-width: 851px) and (max-width: 925px) {
+        #logo img {
+            width:          250px;
+        }
+        header nav a {
+            line-height:    90px;
+        }
+    }
+    @media all and (min-width: 811px) and (max-width: 850px) {
+        #logo img {
+            width:          225px;
+        }
+        header nav a {
+            line-height:    85px;
+        }
+    }
+    @media all and (min-width: 769px) and (max-width: 810px) {
+        #logo img {
+            width:          200px;
+        }
+        header nav a {
+            line-height:    78px;
+        }
+    }    
+    /* BEGIN portfolio responsive styling */
+    /* make header text smaller as screen width gets narrower */
+    /* purpose section, make text column for ul items narrower as screen width narrows on smaller devices, note: this was not accounted for in bootstrap */
+    @media all and (min-width: 769px) and (max-width: 1200px) {
+        #wrapper #port_main #port_container .header_buttons .col-sm-1:nth-child(4) a {
+            width:              125px;
+        }
+    }/* adjust width of 'visit site' button as screen size gets narrower */
+    #wrapper #port_main #port_container #purpose {
+        height:                 500px;
+    }
+    @media all and (min-width: 1050px) and (max-width: 1150px) {
+        #port_main #port_container #purpose .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_2 .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+            width:              400px;
+        }
+    }
+    @media all and (min-width: 950px) and (max-width: 1049px) {
+        #port_main #port_container #purpose .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_2 .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+            width:              350px;
+        }
+    }
+    @media all and (min-width: 850px) and (max-width: 949px) {
+        #port_main #port_container #purpose .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_2 .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+            width:              300px;
+        }
+        #port_main #port_container #port_head .col-sm-6 h3 {
+            font-size:          2em;
+        }
+    }
+    @media all and (min-width: 769px) and (max-width: 849px) {
+        #port_main #port_container #purpose .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_1 .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_2 .col-sm-4 ul,
+        #port_main #port_container #screen_capture_section_3 .col-sm-4 ul {
+            width:              275px;
+        }
+        #port_main #port_container #port_head .col-sm-6 h3 {
+            font-size:          1.8em;
+        }
+    }
+    /* techs_did section, make section highter as text column gets narrower due to narrower screen size */    
+    @media all and (min-width: 1100px) and (max-width: 1150px) {    
+        #port_main #port_container #techs_did {
+            height:             450px;
+        }
+    }
+    @media all and (min-width: 950px) and (max-width: 1099px) {    
+        #port_main #port_container #techs_did {
+            height:            500px;
+        }
+        #port_main #port_container #purpose {
+            height:            450px;
+        }
+    }
+    @media all and (min-width: 850px) and (max-width: 949px) {    
+        #port_main #port_container #techs_did {
+            height:            550px;
+        }
+        #port_main #port_container #purpose {
+            height:            485px;
+        }
+        #port_main #port_container #screen_capture_section_3 {
+            height:            350px;
+        }
+    }
+    @media all and (min-width: 769px) and (max-width: 849px) {    
+        #port_main #port_container #techs_did {
+            height:            600px;
+        }
+        #port_main #port_container #purpose {
+            height:            505px;
+        }
+        #port_main #port_container #screen_capture_section_3 {
+            height:            200px;
+        }
+    }
+    @media all and (min-width: 769px) and (max-width: 849px) {    
+        #port_main #port_container #screen_capture_section_3 {
+            height:             350px;
+        }        
+    }    
+    /* END portfolio responsive styling */
